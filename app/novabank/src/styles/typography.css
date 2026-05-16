@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/*
+|--------------------------------------------------------------------------
+| TYPOGRAPHY SYSTEM
+|--------------------------------------------------------------------------
+*/
+
+/* H1 */
+@utility h1 {
+  @apply
+   text-[45px]
+    font-semibold
+    leading-14
+    text-text-primary;
+}
+
+/* H2 */
+@utility h2 {
+  @apply
+    text-[30px]
+    font-bold
+    leading-9.5
+    text-text-primary;
+}
+
+/* H3 */
+@utility h3 {
+  @apply
+    text-[24px]
+    font-semibold
+    leading-[32px]
+    text-text-primary;
+}
+
+/* H4 */
+@utility h4 {
+  @apply
+    text-[20px]
+    font-semibold
+    leading-7
+    text-text-primary;
+}
+@utility h5 {
+  @apply
+    text-[16px]
+    font-semibold
+    leading-7
+    text-text-primary;
+}
+
+/* Body Text */
+@utility text-body {
+  @apply
+    text-[16px]
+    font-normal
+    leading-[24px]
+    text-text-secondary;
+}
+
+/* Small Text */
+@utility text-small {
+  @apply
+    text-[14px]
+    font-normal
+    leading-5
+    text-text-muted;
+}
+
+/* UI Labels */
+@utility label {
+  @apply
+    text-[12px]
+    font-medium
+    tracking-[0.5px]
+    uppercase
+    text-text-muted;
+}
