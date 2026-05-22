@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+@import "./typography.css";
+@import "./component.css";
+@import "./theme.css";
+
+
+/*
+|--------------------------------------------------------------------------
+| GLOBAL BASE STYLES
+|--------------------------------------------------------------------------
+*/
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: var(--leading-normal);
+  @apply text-sm;
+}
+
+/*
+|--------------------------------------------------------------------------
+| GLOBAL SCROLLBAR
+|--------------------------------------------------------------------------
+*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sidebar);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-light);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/*
+|--------------------------------------------------------------------------
+| GLOBAL SELECTION
+|--------------------------------------------------------------------------
+*/
+
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: white;
+}
